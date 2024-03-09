@@ -3,10 +3,10 @@
 from Account import Account
 # Creating a CD Account class that is a subclass of the Account class.
 class cd_Account(Account):
-    def __init__(self, balance, interest):
+    def __init__(self, balance, interest, months):
         # Define a function for the CD Account
         """Creates a CD account, calculates interest earned, and updates the account balance"""
-    def create_cd_account(balance, interest_rate, months):
+    def create_cd_account(self, balance, interest_rate, months):
         """ Args:
             balance (float): The initial CD account balance.
             interest_rate (float): The APR interest rate for the CD account.
@@ -18,7 +18,7 @@ class cd_Account(Account):
         # Create an instance of the `Account` class and pass in the balance and interest parameters.
         #  Hint: You need to add the interest as a value, i.e, 0.
         # ADD YOUR CODE HERE
-        cd = cd_Account(balance, 0)
+        cd = Account(balance, interest_rate)
         # Calculate interest earned
         # ADD YOUR CODE HERE
         interest_earned = balance * (interest_rate / 100) * (months / 12)

@@ -3,7 +3,7 @@
 """
 This module provides functionality for creating CD and savings accounts.
 """
-from cd_account import create_cd_account
+from cd_account import cd_Account
 from savings_account import create_savings_account
 # Define the main function
 def main():
@@ -25,7 +25,8 @@ def main():
     cd_balance = float(input("Enter the CD account balance: "))
     cd_interest = float(input("Enter the CD account interest rate: "))
     cd_maturity = int(input("Enter the CD account maturity (in months): "))
-    _, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
+    cd_acc = cd_Account(cd_balance, cd_interest, cd_maturity) 
+    _, interest_earned = cd_acc.create_cd_account(cd_balance, cd_interest, cd_maturity)
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
     print("Interest earned on CD account:", interest_earned)
