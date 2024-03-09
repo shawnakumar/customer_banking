@@ -4,7 +4,7 @@ from Account import Account
 # Creating a savings Account class that is a subclass of the Account class.
 class SavingsAccount(Account):
     def __init__(self, balance, interest):
-# Define a function for the Savings Accoun
+# Define a function for the Savings Account
         """Creates a savings account, calculates interest earned, and updates the account balance."""
 def create_savings_account(balance, interest_rate, months):
     """"
